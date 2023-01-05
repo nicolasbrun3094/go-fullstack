@@ -6,10 +6,10 @@ const userRoutes = require("./routes/user");
 const path = require("path");
 
 mongoose
-  .connect(
-    "mongodb+srv://Yaga:Magikironnikos30@cluster0.hnjo7jh.mongodb.net/test",
-    { useNewUrlParser: true, useUnifiedTopology: true }
-  )
+  .connect("mongodb+srv://Yaga:cluster0@cluster0.hnjo7jh.mongodb.net/test", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => console.log("Connexion à MongoDB réussie !"))
   .catch(() => console.log("Connexion à MongoDB échouée !"));
 
